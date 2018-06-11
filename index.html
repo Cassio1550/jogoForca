@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<title>Jogo da Forca</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+<!-- Escala o site de acordo com o tamanho da tela do dispositivo -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<script type="text/javascript" src="js/lib/dummy.js"></script>
+<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="js/shake.js"></script>
+<script type="text/javascript" src="js/hangmangame.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/hangman.style.css">
+<title>HangGame with Voice Control by dntmartins</title>
+</head>
+
+<body>
+
+
+	<img id="titulo_img" src="img/7_icon.png" width="90" height="90" alt="Titulo Forca">
+
+
+	<!--<h1>Jogo da Forca</h1>-->
+	<p id="warning">JavaScript precisa estar habilitado para jogar.</p>
+	<!-- Mensagem avisando ao usuário que o JS precisa estar ativado. -->
+	<img id="shake" src="img/shake-img.png">
+	<span id="shake_text">Chacoalhe para mudar de palavra</span>
+
+	<img id="help" src="img/hangman-rules.png">
+	<!-- //Botão do Help -->
+	<div id="helptext">
+		<!-- //Janela do Help -->
+		<img id="close" src="img/cancel-btn.png">
+		<!-- //Botão do close da Janela do Help -->
+		<h2>Como jogar?</h2>
+
+		<p>O jogo da forca é um jogo em que o jogador tem que acertar qual
+			é a palavra proposta, tendo como dica o número de letras. A cada
+			letra errada, é desenhada uma parte do corpo do enforcado. O jogo
+			termina ou com o acerto da palavra ou com o término do preenchimento
+			das partes corpóreas do enforcado.</p>
+	</div>
+	<p id="loading">Jogo Carregando. . .</p>
+	<p id="naoCompativel">Seu navegador nao e compativel para executar
+		o jogo</p>
+	<!-- Canvas Nova tag HTML 5 Especifica para trabalhar com a API Gráfica 2D do JS -->
+	
+    <canvas id="stage" width="200" height="200">Seu navegador não tem suporte para o canvas.</canvas>
+	<div id="letters"></div>
+	<div class="center">
+		<div id="play">Novo Jogo</div>
+
+		<div id="clear">Limpar Placar</div>
+	</div>
+	<div class="center">
+
+		<!-- Palavra a ser adivinhada -->
+
+		<div id="word"></div>
+	</div>
+	<div class="center">
+		<div id="speechBtn"></div>
+	</div>
+</body>
+</html>
+

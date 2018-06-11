@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+<div align="center">
+
+<img src="img/7_icon.png" width="150" height="150" />
+</div>
+
+<div align="center">
+
+<div id="all">
+  <div id="login-box">
+    <div id="login-header">
+      <h3><b>Jogo da forca </b></h3>
+    </div>
+    <div id="login-inputs">
+      <input type="text" placeholder="Nome de usuário" name="usuario">
+      <br />
+      <input type="password" placeholder="Senha" name="senha" width="60" height="60">
+    </div>
+    <div id="enviar">
+
+      <input type="button" onclick="Logar()" class="waves-effect waves-light btn" value="Login">
+      <a href="cadastro.html">Não tem cadastro? clique aqui</a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <script>
+    
+            function Logar() {
+  var done=0;
+  var usuario = document.getElementsByName('usuario')[0].value;
+  usuario=usuario.toLowerCase();
+  var senha= document.getElementsByName('senha')[0].value;
+  seha=senha.toLowerCase();
+
+  if (usuario=="admin" && senha=="admin") {
+    window.location="index.html";
+    done=1;
+  }
+  if (usuario=="cassio" && senha=="74553125") {
+    window.location="index.html";
+    done=1;
+  }
+  if (usuario=="gabriel" && senha=="565656") {
+    window.location="index.html";
+    done=1;
+  }
+  if (done==0) { alert("Dados incorretos, tente novamente"); }
+}   
+
+
+
+    </script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    </body>
+  </html>
+        

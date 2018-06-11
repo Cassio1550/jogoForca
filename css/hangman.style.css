@@ -1,0 +1,165 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background-image: url(../img/fundo-cinza.jpg);
+}
+
+h1 {
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	word-spacing: 8px;
+	margin-top: 50px;
+}
+
+#titulo_img {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 250px;
+	height: auto;
+	margin-top: 50px;
+}
+
+#shake {
+	display: none;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#shake_text {
+	display: none;
+	font-size: 8px;
+	position: absolute;
+	top: 20px;
+	left: 45px;
+	color: #808080;
+}
+
+#help {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+#helptext {
+	display: none;
+	/*border: #CCC solid 10px;
+    border-radius: 8px;
+    width: 260px;*/
+	position: absolute;
+	padding: 10px;
+	/*top: 50px;
+    background-color: #fff;*/
+	color: #E6E6E6;
+	z-index: 10;
+	top: 10px;
+}
+
+#helptext h2 {
+	margin-top: 0;
+}
+
+#helptext p {
+	margin-bottom: 0;
+}
+
+#close {
+	/*position: absolute;*/
+	width: 40px;
+	height: 40px;
+	/*top: -9px;
+    right: -11px;
+    z-index: 10;*/
+	cursor: pointer;
+	float: right;
+}
+
+#mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.92);
+}
+
+#warning, #naoCompativel {
+	display: none;
+}
+
+#warning, #loading, #naoCompativel {
+	margin-top: 20px;
+	font-size: 150%;
+	font-weight: bold;
+	color: #f00;
+	text-align: center;
+}
+
+#play, #clear {
+	display: none;
+	width: 140px;
+	padding: 0.25em 0;
+	text-align: center;
+	margin: 0.2em 0 0 13px;
+	font-size: 105.5%;
+	cursor: pointer;
+	color: #fff;
+	background-color: #808080;
+	border-radius: 30px;
+}
+
+#stage {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	/*float: left;  */
+}
+
+#word {
+	font-weight: bold;
+	font-size: 150%;
+	letter-spacing: 0.26em;
+	margin: 0.25em 0 0.4em 30px;
+	color: #000000;
+	display: inline;
+}
+
+#letters, #word {
+	letter-spacing: 0.26em;
+	margin: 0.25em 0 0 30px;
+	font-size: 20px;
+}
+
+#letters {
+	color: red;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#speechBtn {
+	cursor: pointer;
+	display: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	background-image: url(../img/mic-off.gif);
+}
+
+.center {
+	margin-top: 10px;
+	text-align: center;
+}
